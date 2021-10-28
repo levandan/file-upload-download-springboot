@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Upload Multi File</title>
+</head>
+
+<body>
+    <th:block th:include="/_menu"></th:block>
+    <h3>Download Multiple File:</h3>
+
+    <ul th:each="file : ${uploadedFiles}">
+        <li><a th:href="${file}"><span th:text="${file}"></span></a></li>
+    </ul>
+
+</body>
+</html>
